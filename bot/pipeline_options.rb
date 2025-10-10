@@ -17,6 +17,11 @@ module PipelineOptions
       messages << 'offsite links: no'
     end
 
+    if params[:no_save_cookies]
+      job.no_save_cookies!
+      messages << 'save cookies: no'
+    end
+
     if !messages.empty?
       reply m, "Options: #{messages.join('; ')}"
     end
