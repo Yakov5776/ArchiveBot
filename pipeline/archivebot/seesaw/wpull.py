@@ -50,7 +50,9 @@ def make_args(item, default_user_agent, wpull_exe, youtube_dl_exe, finished_warc
         '--youtube-dl-exe', youtube_dl_exe
     ]
 
-    if not item.get('no_save_cookies'):
+    if item.get('no_save_cookies'):
+        args.append('--no-cookies')
+    else:
         add_args(args, ['--save-cookies', '%(cookie_jar)s'], item)
 
     if item['url'].startswith("http://www.reddit.com/") or \
