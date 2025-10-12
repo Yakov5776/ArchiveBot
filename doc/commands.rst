@@ -67,8 +67,8 @@ Accepted parameters
 
     Aliases: ``--nooffsitelinks``, ``--no-offsite``, ``--nooffsite``
 
-``--no-save-cookies``
-    do not save cookies to a cookie jar
+``--no-cookies``
+    do not use cookies for each request
 
 ``--user-agent-alias ALIAS``
     specify a user-agent to use::

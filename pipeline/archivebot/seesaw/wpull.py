@@ -50,7 +50,7 @@ def make_args(item, default_user_agent, wpull_exe, youtube_dl_exe, finished_warc
         '--youtube-dl-exe', youtube_dl_exe
     ]
 
-    if item.get('no_save_cookies'):
+    if item.get('no_cookies'):
         args.append('--no-cookies')
     else:
         add_args(args, ['--save-cookies', '%(cookie_jar)s'], item)

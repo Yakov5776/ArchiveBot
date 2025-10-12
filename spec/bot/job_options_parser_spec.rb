@@ -53,8 +53,8 @@ describe JobOptionsParser do
     expect(parser.parse('--concurrency=4')[:concurrency]).to eq(4)
   end
 
-  it 'recognizes --no-save-cookies' do
-    expect(parser.parse('--no-save-cookies')[:no_save_cookies]).to eq(true)
+  it 'recognizes --no-cookies' do
+    expect(parser.parse('--no-cookies')[:no_cookies]).to eq(true)
   end
 
   describe 'when unknown options are present' do
