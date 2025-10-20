@@ -24,7 +24,7 @@ class JobOptionsParser
         b[0] = (case b[0]
                when '--ignoresets','--ignore_sets','--ignoreset','--ignore-set','--ignore_set','--ig-set','--igset' then '--ignore-sets'
                when '--nooffsitelinks','--no-offsite','--nooffsite' then '--no-offsite-links'
-               when '--nocookies', then '--no-cookies'
+               when '--nocookies' then '--no-cookies'
                when '--useragentalias','--user-agent','--useragent' then '--user-agent-alias'
                when '--concurrent' then '--concurrency'
                when '--reason' then '--explain'
